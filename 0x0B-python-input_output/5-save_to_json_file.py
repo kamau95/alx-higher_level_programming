@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""
-contains a function(save_to_json_file) that writes an Object to a text file,in JSON representation
+""""
+writes an Object to a text file,in JSON representation
 Args:
     - obj: The Python object to be saved.
-    - filename: The name of the file where the object will be saved.
+    - filename: where the object will be saved.
 """
 
 
