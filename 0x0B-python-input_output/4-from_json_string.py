@@ -1,8 +1,7 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """
-contains a function that returns an object (Python data structure) represented by a JSON string
+contains the json str function
 """
-
 
 import json
 
@@ -10,4 +9,3 @@ import json
 def from_json_string(my_str):
     """returns an object represented by a JSON string"""
     return json.loads(my_str)
-
