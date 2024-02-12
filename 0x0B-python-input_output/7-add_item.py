@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-add  arguments to a Python list, and then saves them to a file
+adds arguments to a Python list, and then saves them to a file
 """
 
 from sys import argv
@@ -18,6 +18,3 @@ for arg in argv[1:]:
     json_list.append(arg)
 
 save_to_json_file(json_list, filename)
-
-
-
