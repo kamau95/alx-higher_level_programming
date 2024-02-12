@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """"
-writes an Object to a text file,in JSON representation
+writes Object to a text file,in JSON representation
 Args:
     - obj: The Python object to be saved.
     - filename: where the object will be saved.
