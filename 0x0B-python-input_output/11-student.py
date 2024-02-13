@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """
 here you find class Student
 """
@@ -13,10 +13,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """ retrieves a dict representation of instance"""
-         if (type(attrs) == list and
+        if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
+
     def reload_from_json(self, json):
         """ method to replace all instances of class student"""
         for key in json:
