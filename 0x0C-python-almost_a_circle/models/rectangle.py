@@ -18,16 +18,25 @@ class Base:
 
 
 class Rectangle(Base):
-    """" inherits from the bae class """
+    """
+    Rectangle class that inherits from
+    the base class- inherits from the bae class
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ rectangle constructor"""
+        """
+        Initialize the Rectangle class
+        with width, height, and optional ID
+        """
         super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
 
-    """setter and getter methods"""
+    """
+    setter and getter methods
+    for width, height, x, and y...
+    """
     @property
     def width(self):
         return self.__width
