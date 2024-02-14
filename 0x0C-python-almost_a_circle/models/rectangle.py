@@ -1,20 +1,6 @@
 #!/usr/bin/python3
-"""
-will contain parent class base
-"""
-
-
-class Base:
-    """ my bas e class"""
-    __nb_objects = 0
-
-    def __init__(self, id=None):
-        """Check if id is provided"""
-        if id is not None:
-            self.id = id
-        else:
-            Base.__nb_objects += 1
-            self.id = Base.__nb_objects
+"""Defines a rectangle class"""
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -23,20 +9,14 @@ class Rectangle(Base):
     the base class- inherits from the bae class
     """
     def __init__(self, width, height, x=0, y=0, id=None):
-        """
-        Initialize the Rectangle class
-        with width, height, and optional ID
-        """
-        super().__init__(id)
+        """Initialize the Rectangle class"""
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
+        super().__init__(id)
 
-    """
-    setter and getter methods
-    for width, height, x, and y...
-    """
+    """setter and getter methods for width, height, x, and y"""
     @property
     def width(self):
         return self.__width
