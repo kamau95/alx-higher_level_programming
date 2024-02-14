@@ -2,6 +2,8 @@
 """
 will contain parent class base
 """
+
+
 class Base:
     """ my bas e class"""
     __nb_objects = 0
@@ -13,6 +15,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
 
 class Rectangle(Base):
     """" inherits from the bae class """
