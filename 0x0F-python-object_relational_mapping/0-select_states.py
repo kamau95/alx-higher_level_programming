@@ -17,7 +17,7 @@ def list_states(username, password, dbname):
             )
 
     cur = db.cursor()
-    my_query = """SELECT id FROM states ORDER BY id ASC;"""
+    my_query = """SELECT id, name FROM states ORDER BY id ASC;"""
 
     # Execute query
     cur.execute(my_query)
@@ -26,17 +26,17 @@ def list_states(username, password, dbname):
     my_records = cur.fetchall()
     for record in my_records:
         print(record)
-    db.close()
     cur.close()
+    db.close()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     if len(sys.argv) < 4:
         print("Usage:python script.py <username> <password> <database_name>")
         sys.exit(1)
 
-        username = sys.argv[1]
-        password = sys.argv[2]
-        dbname = sys.argv[3]
+    username = sys.argv[1]
+    password = sys.argv[2]
+    dbname = sys.argv[3]
 
-        list_states(username, password, dbname)
+    list_states(username, password, dbname)
