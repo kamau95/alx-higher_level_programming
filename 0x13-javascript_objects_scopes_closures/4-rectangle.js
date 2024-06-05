@@ -1,16 +1,9 @@
 #!/usr/bin/node
 class Rectangle {
   constructor (w, h) {
-    if (w > 0 && h > 0) {
+    if ((w > 0) && (h > 0)) {
       this.height = h;
       this.width = w;
-    }
-  }
-
-  double () {
-    if (this.width && this.height) {
-      this.width *= 2;
-      this.height *= 2;
     }
   }
 
@@ -23,6 +16,13 @@ class Rectangle {
         }
         console.log(row);
       }
+    }
+  }
+
+  double () {
+    if (this.width && this.height) {
+      this.width *= 2;
+      this.height *= 2;
     }
   }
 
